@@ -16,6 +16,7 @@
 		2724288C159BB597004F82AA /* drink.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2724288A159BB597004F82AA /* drink.wav */; };
 		2724288D159BB597004F82AA /* getready.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2724288B159BB597004F82AA /* getready.wav */; };
 		2724288F159BB5A2004F82AA /* pic00005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2724288E159BB5A2004F82AA /* pic00005.jpg */; };
+		D04F72AE159BBDD4006F36BA /* NextSong.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D04F72AD159BBDD4006F36BA /* NextSong.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2724288A159BB597004F82AA /* drink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drink.wav; sourceTree = "<group>"; };
 		2724288B159BB597004F82AA /* getready.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = getready.wav; sourceTree = "<group>"; };
 		2724288E159BB5A2004F82AA /* pic00005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic00005.jpg; sourceTree = "<group>"; };
+		D04F72AD159BBDD4006F36BA /* NextSong.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = NextSong.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				2724287F159BB516004F82AA /* AppDelegate.h */,
 				27242880159BB516004F82AA /* AppDelegate.m */,
 				27242882159BB516004F82AA /* MainMenu.xib */,
+				D04F72AD159BBDD4006F36BA /* NextSong.scpt */,
 				27242874159BB516004F82AA /* Supporting Files */,
 			);
 			path = PowerHour;
@@ -167,6 +170,7 @@
 				2724288C159BB597004F82AA /* drink.wav in Resources */,
 				2724288D159BB597004F82AA /* getready.wav in Resources */,
 				2724288F159BB5A2004F82AA /* pic00005.jpg in Resources */,
+				D04F72AE159BBDD4006F36BA /* NextSong.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +304,7 @@
 				27242889159BB516004F82AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -30,11 +30,18 @@
 }
 
 
+- (void)nextSong:(id) sender {
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"NextSong" ofType:@"scpt"];
+    NSURL* url = [NSURL fileURLWithPath:path];NSDictionary* errors = [NSDictionary dictionary];
+    NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
+    [appleScript executeAndReturnError:nil];
+}
+
 - (void)timerFired:(id) sender {
     
     if (_seconds == 10) {
         // Get ready to drink
-        
+        [self getReady:self];
         
     } else if (_seconds == 0) {
         // Drink
@@ -54,11 +61,23 @@
     _seconds--;
 }
 
+- (void)getReady:(id) sender {
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"getready" ofType:@"wav"];
+    NSSound *sound = [[NSSound alloc] initWithContentsOfFile:resourcePath byReference:YES];
+    [sound play];
+}
 
 - (void)driiiink:(id) sender {
     
     [self.drinkLabel setHidden: (_drinkLabelCount % 2)];
-        
+    
+    if (_drinkLabelCount == 0) {
+        [self nextSong:self];
+        NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"drink" ofType:@"wav"];
+        NSSound *sound = [[NSSound alloc] initWithContentsOfFile:resourcePath byReference:YES];
+        [sound play];
+    }
+    
     if (_drinkLabelCount == 3) {
         _drinkLabelCount = 0;
     } else {
