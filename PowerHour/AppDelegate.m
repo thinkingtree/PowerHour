@@ -52,6 +52,9 @@
         
         if (_drinks == 60) {
             [self performSelector:@selector(goBoot:) withObject:nil afterDelay:.1];
+            NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"drink" ofType:@"wav"];
+            NSSound *sound = [[NSSound alloc] initWithContentsOfFile:resourcePath byReference:YES];
+            [sound play];
             return;
         }
         
