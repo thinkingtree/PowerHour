@@ -14,11 +14,13 @@
     BOOL _firstRun;
     BOOL _showingDrinkLabel;
     NSInteger _drinkLabelCount;
+    NSInteger _goBootCount;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSTextField *drinkLabel;
 @property (weak) IBOutlet NSTextField *secondsLabel;
 @property (weak) IBOutlet NSTextField *drinksLabel;
+@property (weak) IBOutlet NSImageView *mainPicture;
 
 @end

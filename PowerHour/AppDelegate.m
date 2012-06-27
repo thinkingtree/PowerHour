@@ -15,6 +15,7 @@
 @synthesize drinkLabel = _drinkLabel;
 @synthesize secondsLabel = _secondsLabel;
 @synthesize drinksLabel = _drinksLabel;
+@synthesize mainPicture = _mainPicture;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -32,6 +33,7 @@
 
 - (void)timerFired:(id) sender {
     
+    
     if (_seconds == 10) {
         // Get ready to drink
         
@@ -39,9 +41,16 @@
     } else if (_seconds == 0) {
         // Drink
         
+        _drinks++;
+        
+        if (_drinks == 60) {
+            [self performSelector:@selector(goBoot:) withObject:nil afterDelay:.1];
+            return;
+        }
+        
         [self performSelector:@selector(driiiink:) withObject:nil afterDelay:.1];
         
-        _drinks++;
+        
         _seconds = 60;
         
     } 
@@ -66,5 +75,24 @@
         _drinkLabelCount++;
     }
 }
+
+- (void)goBoot:(id) sender { 
+    
+    self.mainPicture.image = [NSImage imageNamed:[NSString stringWithFormat:@"boot%d.bmp", _goBootCount+1]];
+    [self.drinkLabel setStringValue:@"Go Boot!"];
+    
+    [self.drinkLabel setHidden: (_goBootCount % 2)];
+    
+    if (_goBootCount == 3) {
+        _goBootCount = 0;
+    } else {
+        _goBootCount++;
+    }
+    
+     [self performSelector:@selector(goBoot:) withObject:nil afterDelay:.7];
+    
+}
+
+
 
 @end
