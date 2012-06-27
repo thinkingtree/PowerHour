@@ -20,6 +20,7 @@
 		2724289A159BBFC0004F82AA /* boot2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 27242897159BBFC0004F82AA /* boot2.bmp */; };
 		2724289B159BBFC0004F82AA /* boot3.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 27242898159BBFC0004F82AA /* boot3.bmp */; };
 		2724289C159BBFC0004F82AA /* boot4.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 27242899159BBFC0004F82AA /* boot4.bmp */; };
+		D04F72AE159BBDD4006F36BA /* NextSong.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D04F72AD159BBDD4006F36BA /* NextSong.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		27242897159BBFC0004F82AA /* boot2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = boot2.bmp; sourceTree = "<group>"; };
 		27242898159BBFC0004F82AA /* boot3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = boot3.bmp; sourceTree = "<group>"; };
 		27242899159BBFC0004F82AA /* boot4.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = boot4.bmp; sourceTree = "<group>"; };
+		D04F72AD159BBDD4006F36BA /* NextSong.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = NextSong.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2724287F159BB516004F82AA /* AppDelegate.h */,
 				27242880159BB516004F82AA /* AppDelegate.m */,
 				27242882159BB516004F82AA /* MainMenu.xib */,
+				D04F72AD159BBDD4006F36BA /* NextSong.scpt */,
 				27242874159BB516004F82AA /* Supporting Files */,
 			);
 			path = PowerHour;
@@ -183,6 +186,7 @@
 				2724289A159BBFC0004F82AA /* boot2.bmp in Resources */,
 				2724289B159BBFC0004F82AA /* boot3.bmp in Resources */,
 				2724289C159BBFC0004F82AA /* boot4.bmp in Resources */,
+				D04F72AE159BBDD4006F36BA /* NextSong.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
